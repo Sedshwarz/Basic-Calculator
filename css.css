@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{box-sizing: border-box;}
+
+body{
+  background: #f6b274;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, 20%);
+  font-family: 'Poppins',sans-serif;
+}
+
+.wrap{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 35px 35px;
+  background: #3d3b48;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
+}
+
+.screen{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 12px 17px;
+  background: #aeb8c9;
+  width: 100%;
+  font-size: 24px;
+  font-family: 'Poppins',sans-serif;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.keyboard{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+  .keyboard div{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+  }
+
+  .row1 button:nth-child(3){
+    width: 122px;
+    background: #39d99b;
+    color: #fefefe;
+  }
+  .row1 button:nth-child(3):hover{background: #38cb92;}
+
+.keyboard div button{
+  padding: 15px;
+  font-family: 'Poppins';
+  background: #bfabd1;
+  border: none;
+  outline: none;
+  width: 60px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.keyboard div button:hover{background: #b4a1c4;}
+.keyboard div button:active{transform: scale(0.75);}
+
+.keyboard div .operation{
+  background: #e46858;
+  color: #fefefe;
+  font-weight: 500;
+}
+.keyboard div .operation:hover{background: #da5d4c;}
